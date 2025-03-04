@@ -1,100 +1,75 @@
-###############################################################################
-Matrix Manipulation Program
+################################################################################
+#                         🟢 MATRIX MANIPULATION PROGRAM 🟢                      #
+################################################################################
 
-**********************************************************************************
+********************************************************************************
+🎯 **Overview**
+********************************************************************************
+This C program is designed for **various matrix operations**. It allows users to:
+✅ **Create, manipulate, and perform calculations on matrices**  
+✅ **Execute operations like multiplication, transposition, sorting, resizing,**  
+✅ **And raising a matrix to a power.**
 
-Overview
-This C program is designed for various matrix operations. It allows users to
-create, manipulate, and perform calculations on matrices. The program offers
-functionalities such as loading matrices, printing them, performing matrix
-multiplication, transposing matrices, sorting them, resizing, and raising
-a matrix to a power.
+********************************************************************************
+🚀 **FEATURES**
+********************************************************************************
+🔹 **Loading Matrices** (Command **'L'**): Load a new matrix with specified dimensions and values.  
+🔹 **Displaying Matrix Dimensions** (Command **'D'**): Display the dimensions of a specific matrix.  
+🔹 **Printing Matrices** (Command **'P'**): Print the contents of a matrix.  
+🔹 **Matrix Multiplication** (Command **'M'**): Multiply two matrices.  
+🔹 **Transposing Matrix** (Command **'T'**): Transpose a given matrix.  
+🔹 **Deleting Matrix** (Command **'F'**): Free the memory allocated to a matrix.  
+🔹 **Sorting Matrices** (Command **'O'**): Sort all matrices based on the sum of their elements.  
+🔹 **Resizing Matrix** (Command **'C'**): Resize a given matrix.  
+🔹 **Raising Matrix to Power** (Command **'R'**): Raise a matrix to a specified power.  
+🔹 **Quit Program** (Command **'Q'**): Exit the program.  
 
-**********************************************************************************
-
-Features
-Loading Matrices (Command 'L'): Load a new matrix with specified dimensions and values.
-Displaying Matrix Dimensions (Command 'D'): Display the dimensions of a specific matrix.
-Printing Matrices (Command 'P'): Print the contents of a matrix.
-Matrix Multiplication (Command 'M'): Multiply two matrices.
-Transposing Matrix (Command 'T'): Transpose a given matrix.
-Deleting Matrix (Command 'F'): Free the memory allocated to a matrix.
-Sorting Matrices (Command 'O'): Sort all matrices based on the sum of their elements.
-Resizing Matrix (Command 'C'): Resize a given matrix.
-Raising Matrix to Power (Command 'R'): Raise a matrix to a specified power.
-Quit Program (Command 'Q'): Exit the program.
-
-**********************************************************************************
-Usage
-Compilation: Compile the program using a C compiler. For example, with gcc:
-
+********************************************************************************
+🛠 **USAGE GUIDE**
+********************************************************************************
+### 🏗 Compilation:
+To compile the program using **GCC**, run:  
+```bash
 gcc -o matrix_program my_octave.c
-Running the Program:
+▶ Running the Program:
 bash
+Copy
 ./matrix_program
-Entering Commands: Once the program is running, enter the commands as described above. For example:
-To load a matrix: L 3 3 followed by matrix elements.
-To print a matrix with index 1: P 1.
+⌨ Entering Commands:
+Once the program is running, enter commands as described above.
+For example:
 
-**********************************************************************************
-
-Code Structure
-Data Structures: Defines a structure for storing matrices and their dimensions.
-Dynamic Memory Management: Allocates and frees memory dynamically as matrices are added or removed.
-Error Handling: Includes robust error handling for memory allocation and invalid operations.
-
-Certainly! I'll expand the README to include more details about the program's functionality,
-code structure, and usage instructions.
-
-Matrix Manipulation Program
-Overview
-This program, written in C, is designed to handle various matrix operations efficiently and
-effectively. It offers a range of functionalities, from basic matrix creation and display
-to complex operations like matrix multiplication and exponentiation.
-
-Key Features
-Load Matrix ('L'): Create matrices by specifying their dimensions and entering elements.
-Display Dimensions ('D'): Show the dimensions of a selected matrix.
-Print Matrix ('P'): Display the entire matrix on the console.
-Matrix Multiplication ('M'): Multiply two specified matrices.
-Transpose Matrix ('T'): Transpose a selected matrix.
-Delete Matrix ('F'): Free up memory allocated to a specific matrix.
-Sort Matrices ('O'): Arrange all matrices in order of the sum of their elements.
-Resize Matrix ('C'): Change the dimensions of a matrix, retaining or discarding elements as necessary.
-Power of Matrix ('R'): Compute the power of a matrix.
-Exit ('Q'): Terminate the program.
-Usage Guide
-Compilation:
-Use a C compiler for compilation. Example with gcc:
-
-Copy code
-gcc -o matrix_program my_octave.c
-Execution:
-To run the program, use:
-
+To load a matrix:
 bash
-Copy code
-./matrix_program
-Interacting with the Program:
-
-Follow the prompts to enter commands and matrix data.
-Example: Input L 2 2 followed by 4 numbers to create a 2x2 matrix.
-Coding Style Check:
-To ensure the code adheres to best practices, use the provided checker script:
-
+Copy
+L 3 3 
+# (Followed by the 3x3 matrix elements)
+To print a matrix with index 1:
 bash
-Copy code
+Copy
+P 1
+🔎 DETAILED CODE STRUCTURE
+
+📌 Matrix Data Structure:
+
+Uses a struct to manage matrices, including their elements and dimensions.
+📌 Dynamic Memory Allocation:
+
+Employs malloc() and free() for flexible memory management.
+📌 Error Handling:
+
+Includes robust validation for invalid inputs and memory allocation failures.
+📌 Command-Driven Interface:
+
+Designed for ease of use, with simple command-line operations.
+📌 Optimized Operations:
+
+Implements efficient algorithms for multiplication, transposition, and exponentiation.
+📌 Modular Functions:
+
+Code is structured into independent functions, making it easy to read and maintain.
+📌 CODE QUALITY CHECK
+
+To ensure the code follows best practices, use the provided checker script:
+
 ./check
-Detailed Code Structure
-Matrix Data Structure: Utilizes a struct to manage matrices, including their elements
-			and dimensions.
-Dynamic Memory Allocation: Employs dynamic memory for matrix storage, allowing
- 			  flexibility in matrix sizes.
-Robust Error Handling: Implements comprehensive error checking for invalid inputs
-			and memory allocation issues.
-Command-Driven Interface: Utilizes a command-based interface for ease of use and clear
-			 user interaction.
-Optimized Operations: Includes optimized algorithms for matrix multiplication, transposing,
-			and exponentiation.
-Modular Functions: The code is organized into functions, each handling a specific task,
-	 		for readability and maintainability.
