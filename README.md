@@ -29,24 +29,21 @@ This C program is designed for **various matrix operations**. It allows users to
 ********************************************************************************
 ### 🏗 Compilation:
 To compile the program using **GCC**, run:  
-```bash
+
 gcc -o matrix_program my_octave.c
 ▶ Running the Program:
-bash
-Copy
+
 ./matrix_program
 ⌨ Entering Commands:
 Once the program is running, enter commands as described above.
 For example:
 
 To load a matrix:
-bash
-Copy
+
 L 3 3 
 # (Followed by the 3x3 matrix elements)
 To print a matrix with index 1:
-bash
-Copy
+
 P 1
 🔎 DETAILED CODE STRUCTURE
 
